@@ -31,3 +31,16 @@ h2Html.textContent = description[activeElement];
 }
 
 setInterval(changeElement, timeChange);
+
+
+const btnOpen = document.querySelector('.backdrop__open-button');
+const btnClose = document.querySelector('.backdrop__close-button');
+const menu = document.querySelector('.backdrop__menu');
+
+btnOpen.addEventListener('click', function() {
+    menu.style.display = 'block';
+})
+
+btnClose.addEventListener('click', function() {
+    menu.style.display = 'none';
+})
